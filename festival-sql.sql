@@ -1,5 +1,5 @@
 -- 1.
-SELECT cinema_nom, cinema_adresse, cinema_nb_salles FROM f_cinemas
+SELECT cinema_nom, cinema_adresse, cinema_nb_salles FROM f_cinemas ORDER BY cinema_nom
 
 -- 2.
 SELECT film_nom, film_realisateur FROM f_films WHERE film_pays = "France" ORDER BY film_date_sortie DESC

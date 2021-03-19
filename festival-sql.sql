@@ -14,8 +14,7 @@ SELECT DATE_FORMAT(seance_heure_date, " %d/%m à %Hh"), film_nom FROM f_seances 
 SELECT COUNT(seance_id) FROM f_seances WHERE DATE(seance_heure_date) = '2021-03-23'
 
 -- 6.
-SELECT seance_heure_date, cinema_nom FROM f_seances INNER JOIN f_cinemas ON f_cinemas.cinema_id = f_seances.fk_cinema_id 
-WHERE cinema_nom = "Diagonal Cinémas"
+SELECT seance_heure_date, cinema_nom FROM f_seances INNER JOIN f_cinemas ON f_cinemas.cinema_id = f_seances.fk_cinema_id WHERE cinema_nom = "Diagonal Cinémas"
 
 -- 7.
 UPDATE f_films SET film_date_sortie = '2018' WHERE film_id = 6
